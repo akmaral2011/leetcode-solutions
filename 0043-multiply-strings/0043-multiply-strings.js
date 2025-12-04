@@ -4,6 +4,5 @@
  * @return {string}
  */
 var multiply = function(num1, num2) {
-    let sum = num1*num2
-    return BigInt(sum).toString()
+   return (BigInt(num1)*BigInt(num2)).toString()
 };
