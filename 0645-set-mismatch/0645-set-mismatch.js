@@ -6,6 +6,9 @@ var findErrorNums = function(nums) {
     nums.sort((a,b)=>a-b)
     let dublicate,missing;
     for(let i=1;i<nums.length;i++){
+        if (nums[0] !== 1) {
+        missing = 1;
+        }
         if(nums[i]===nums[i-1]){
            dublicate=nums[i]
         }
